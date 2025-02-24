@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titre du Site</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main>
+
+            <!-- Boutons radio pour chaque onglet -->
+            <input type="radio" name="tabs" id="tab-1" checked>
+            <input type="radio" name="tabs" id="tab-2">
+
+            <nav>
+                <!-- Les labels qui serviront d'onglets -->
+                <div class="tabs">
+                    <label class="tab-label" for="tab-1">Accueil</label>
+                    <label class="tab-label" for="tab-2">Événements à Venir</label>
+                </div>
+            </nav>
+
+            <div class="tab-content tab-content-1">
+                <!-- Les contenus des onglets -->
+                <div class="lengthy">
+                    <div id="coffee_div">
+                        <div id="coffee_img">
+                            <img  src="assets/coffee.webp" alt="Coffee">
+                        </div>
+                        <div id="coffee_div_text">
+                            <h2><strong class="blue_text">Invitation au Petit-Déjeuner du Mentorat <br> – 20 mars 2025</strong></h2>
+                            <br>
+                            <strong class="bold_text">Bienvenue dans la démarche de mentorat FAP !</strong>
+                            <br><br>
+                            Merci d’avoir accepté de devenir <strong class="bold_text">mentor</strong> ! Votre <strong class="bold_text">expérience</strong> et votre <strong class="bold_text">regard professionnel</strong> vont être un <strong class="bold_text">tremplin</strong> pour nos stagiaires.
+                            <br><br>
+                            Avant de débuter cette aventure ensemble, nous vous proposons un <strong class="bold_text">moment convivial</strong> pour <strong class="bold_text">échanger</strong>, <strong class="bold_text">découvrir les modalités du mentorat</strong> et <strong class="bold_text">rencontrer d’autres professionnels engagés</strong>.
+                            <br><br><br>
+                            <strong class="bold_text">Professionnels, partagez un moment convivial autour du mentorat !</strong>
+
+                            Le 20 mars de 9h00 à 11h00
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="video_div">
+                        <h2><strong class="blue_text">Découvrez le mentorat en vidéo !</strong></h2>
+                        <video controls>
+                            <source src="assets/Mentorship_Breakfast_and_Speed-Mentoring%20(4).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <hr>
+                    <div id="signup">
+                        <br>
+                        <h2><strong class="blue_text">Inscription au Petit-Déjeuner du Mentorat</strong></h2>
+
+                        <br>
+                        <strong class="bold_text">🔗 Pour confirmer votre présence, <strong class="blue_text"><a href="https://forms.gle/n3dMgQdrWnVfG5D78">cliquez ici</a></strong></strong>
+                        <br><br>
+                        <strong class="bold_text">Une question ? Contactez-nous :
+                            <br>
+                            ☎  02 38 85 95 62
+                            <br>
+                            ✉️ corinne.delton@fap45.com
+                        </strong>
+                    </div>
+
+                    <div id="mentor_kit">
+                        <h2><strong class="blue_text">Kit du Mentorat</strong></h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <input type="checkbox" id="item1">
+                                <label class="accordion-header" for="item1">
+                                    <span class="question">Quels sont les objectifs ?</span>
+                                    <span class="arrow">&#9654;</span>
+                                </label>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><span class="">Inspirer et conseiller les stagiaires dans leur parcours professionnel.</span></li>
+                                        <li><span class="">Partager des expériences et des conseils concrets.</span></li>
+                                        <li><span class="">Développer les compétences et la confiance du stagiaire.</span></li>
+                                        <li><span class="">Encourager un échange dynamique et bienveillant.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="item2">
+                                <label class="accordion-header" for="item2">
+                                    <span class="question">Conseils pour un Mentorat Réussi ?</span>
+                                    <span class="arrow">&#9654;</span>
+                                </label>
+                                <div class="accordion-content">
+                                    <div >
+                                        <p class=""><span class=""> </span><strong><span class="">Pour le Mentor :</span></strong></p>
+                                        <ul>
+                                            <li><span class="">Prenez le temps d’écouter les attentes et besoins du stagiaire.</span></li>
+                                            <li><span class="">Partagez vos expériences lorsque cela est pertinent et adapté.</span></li>
+                                            <li><span class="">Restez flexible dans votre disponibilité, chaque contribution est précieuse.</span></li>
+                                            <li><span class="">Partagez</span></li>
+                                            <li><span class="">Encouragez un dialogue ouvert et constructif.</span></li>
+                                        </ul>
+                                        <p>&nbsp;</p>
+                                        <p><strong><span class="">Pour le Stagiaire :</span></strong></p>
+                                        <ul>
+                                            <li>Définissez vos attentes et objectifs dès le début.</li>
+                                            <li>Posez des questions et montrez votre engagement.</li>
+                                            <li>Appliquez progressivement les conseils reçus selon votre rythme.</li>
+                                            <li>Respectez les disponibilités du mentor et restez adaptable.</li>
+                                            <li>Valorisez les échanges et tirez-en des enseignements utiles.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="item3">
+                                <label class="accordion-header" for="item3">
+                                    <span class="question">Quel est le plan d’action ?</span>
+                                    <span class="arrow">&#9654;</span>
+                                </label>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><span class="">Planifier une première rencontre ou un entretien téléphonique.</span><span class=""> </span></li>
+                                        <li><span class="">Échanger sur les attentes et les possibilités d’accompagnement.</span></li>
+                                        <li><span class="">Poursuivre par un suivi adapté à la disponibilité du mentor et aux besoins du stagiaire.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="why">
+                    <div class="lengthy">
+                        Pourquoi venir ?
+
+
+                        Échanger avec d’autres professionnels engagés
+                        Découvrir le mentorat et son impact sur les stagiaires
+                        Poser vos questions autour d’un café
+                        Rejoindre une initiative humaine et valorisante
+
+
+
+                        Le mentorat est un échange mutuel : le mentor partage son savoir et le stagiaire apporte une nouvelle perspective. Ensemble, vous créez une relation professionnelle enrichissante et motivante !
+
+
+                        Bonne collaboration !
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="tab-content tab-content-2">
+                <h2>Contenu Onglet 2</h2>
+                <p>Aliquam in nisl in orci malesuada placerat at a eros. Nullam vel magna velit.</p>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

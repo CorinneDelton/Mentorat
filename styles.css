@@ -1,0 +1,219 @@
+html {
+    color: #737373;
+}
+
+/* Réinitialisation de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+}
+
+/* Masquer les boutons radio */
+input[type="radio"] {
+    display: none;
+}
+
+.lengthy {
+    display: block;
+    justify-content: center;
+    margin: 0 15%;
+}
+
+/* Container pour les labels d'onglets */
+.tabs {
+    display: flex;
+}
+
+/* Styles des onglets (labels) */
+.tab-label {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.tab-label:hover {
+    background: #4caac9;
+    color: white;
+}
+
+/* Contenu des onglets */
+.tab-content {
+    display: none; /* Masqué par défaut */
+    padding: 20px;
+}
+
+/* Afficher le contenu correspondant au bouton radio coché */
+#tab-1:checked ~ .tab-content-1,
+#tab-2:checked ~ .tab-content-2 {
+    display: block;
+}
+
+/* Mise en évidence de l'onglet actif */
+#tab-1:checked ~ nav .tabs .tab-label[for="tab-1"],
+#tab-2:checked ~ nav .tabs .tab-label[for="tab-2"]{
+    background: #4caac9;
+    color: white;
+    border-radius: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav::before,
+nav::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    /* Adjust the space between the line and the nav content */
+    margin: 0 10px 20px;
+}
+
+#coffee_div {
+    display: flex;
+}
+
+#coffee_div_text {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#coffee_img {
+    margin-top: 2%;
+    width: 1200px;    /* Set width as needed */
+    height: 400px;   /* 70% of 400px */
+    overflow: hidden; /* Hide any overflowing parts */
+    margin-bottom: 5%;
+}
+
+/* The image fills the container */
+#coffee_img img {
+    width: 100%;
+    height: auto;
+    /* Optionally, adjust positioning if needed */
+    object-fit: cover;
+}
+
+/* Hide the checkboxes */
+.accordion input[type="checkbox"] {
+    display: none;
+}
+
+/* Accordion container */
+.accordion {
+    max-width: 700px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Each accordion item */
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Remove border from last item */
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+/* Accordion header styling */
+.accordion-header {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4caac9;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #e0e0e0;
+}
+
+/* Arrow styling with smooth rotation */
+.accordion-header .arrow {
+    transition: transform 0.2s;
+}
+
+/* Accordion content styling with smooth transition */
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    text-align: start;
+    transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out, padding 0.1s ease-in-out;
+    padding: 0 15px;
+}
+
+.accordion-content ul {
+    margin-left: 2%;
+}
+
+/* Show content when the checkbox is checked */
+.accordion input[type="checkbox"]:checked + .accordion-header + .accordion-content {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1;
+    padding: 15px;
+}
+
+/* Rotate arrow when open */
+.accordion input[type="checkbox"]:checked + .accordion-header .arrow {
+    transform: rotate(90deg);
+}
+
+.blue_text {
+    color: #4caac9;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+#video_div {
+    margin-top: 4%;
+    text-align: center;
+    margin-bottom: 4%;
+
+}
+
+#video_div video {
+    display: block;
+    margin: 3% auto 0;
+    width: 80%;
+    height: 40%;
+    border: 1px solid #ccc;
+}
+
+#signup {
+    text-align: center;
+}
+
+#mentor_kit {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#why {
+    color: white;
+    background-color: #4caac9;
+}
+
+#why_div {
+
+}
