@@ -10,6 +10,9 @@
     </head>
 
     <body>
+        <header>
+            <h1 class="header-title">Programme Mentorat F.A.P</h1>
+        </header>
         <main>
 
             <!-- Boutons radio pour chaque onglet -->
@@ -20,7 +23,7 @@
                 <!-- Les labels qui serviront d'onglets -->
                 <div class="tabs">
                     <label class="tab-label" for="tab-1">Accueil</label>
-                    <label class="tab-label" for="tab-2">Événements à Venir</label>
+                    <label class="tab-label" for="tab-2">Inscription</label>
                 </div>
             </nav>
 
@@ -48,7 +51,7 @@
                     <hr>
                     <div id="video_div">
                         <h2><strong class="blue_text">Découvrez le mentorat en vidéo !</strong></h2>
-                        <video controls>
+                        <video id="myVideo" controls>
                             <source src="assets/Mentorship_Breakfast_and_Speed-Mentoring%20(4).mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -65,7 +68,7 @@
                             <br>
                             ☎  02 38 85 95 62
                             <br>
-                            ✉️ corinne.delton@fap45.com
+                            ✉️ <a href="mailto:corinne.delton@fap45.com">corinne.delton@fap45.com</a>
                         </strong>
                     </div>
 
@@ -136,24 +139,42 @@
                 </div>
 
                 <div id="why">
-                    <div class="lengthy">
-                        Pourquoi venir ?
-
+                    <div class="lengthy" id="why_div">
+                        <h1>Pourquoi venir ?</h1>
+                        <br><br>
 
                         Échanger avec d’autres professionnels engagés
                         Découvrir le mentorat et son impact sur les stagiaires
                         Poser vos questions autour d’un café
                         Rejoindre une initiative humaine et valorisante
 
-
+                        <br><br><br>
 
                         Le mentorat est un échange mutuel : le mentor partage son savoir et le stagiaire apporte une nouvelle perspective. Ensemble, vous créez une relation professionnelle enrichissante et motivante !
 
-
+                        <br><br><br>
                         Bonne collaboration !
                     </div>
 
                 </div>
+
+                <hr>
+
+                <footer>
+                    <h2><strong class="blue_text">FAP</strong></h2>
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2652.254109889946!2d2.732774376745277!3d47.99693547114679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e50d10c6d5fa23%3A0x7bbd1fdc843dc3f6!2s25%20Rue%20Jean%20Jaur%C3%A8s%2C%2045200%20Montargis%2C%20France!5e0!3m2!1sfr!2sfr!4v1711892955616!5m2!1sfr!2sfr"
+                            width="500"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                    </iframe>
+
+                    <br>
+                    <br>
+                    © 2025 Démarche Mentorat
+                </footer>
             </div>
 
 
@@ -161,10 +182,16 @@
 
 
             <div class="tab-content tab-content-2">
-                <h2>Contenu Onglet 2</h2>
-                <p>Aliquam in nisl in orci malesuada placerat at a eros. Nullam vel magna velit.</p>
+                <iframe src="https://forms.gle/n3dMgQdrWnVfG5D78"
+                        width="100%"
+                        height="800"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0">>Chargement…</iframe>
+
             </div>
         </main>
+
 
         <script src="script.js"></script>
 

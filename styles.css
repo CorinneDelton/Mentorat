@@ -10,8 +10,8 @@ html {
 }
 
 body {
+    width: 100vw;
     font-family: 'Open Sans', sans-serif;
-    margin: 20px;
 }
 
 /* Masquer les boutons radio */
@@ -82,27 +82,39 @@ nav::after {
 
 #coffee_div {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
 }
 
-#coffee_div_text {
-    margin-left: 5%;
-    margin-top: 5%;
+@media (max-width: 600px) {
+    #coffee_div_text {
+        margin-left: 8%;
+        margin-top: 5%;
+
+    }
 }
+
+@media (min-width: 1200px) {
+    #coffee_div_text {
+        margin-left: 8%;
+        margin-top: 5%;
+        width: 50%;
+        max-width: 35vw;
+    }
+}
+
+
 
 #coffee_img {
     margin-top: 2%;
-    width: 1200px;    /* Set width as needed */
-    height: 400px;   /* 70% of 400px */
-    overflow: hidden; /* Hide any overflowing parts */
-    margin-bottom: 5%;
+    max-width: 500px;
 }
 
 /* The image fills the container */
 #coffee_img img {
     width: 100%;
     height: auto;
-    /* Optionally, adjust positioning if needed */
-    object-fit: cover;
+
 }
 
 /* Hide the checkboxes */
@@ -112,7 +124,7 @@ nav::after {
 
 /* Accordion container */
 .accordion {
-    max-width: 700px;
+    max-width: 900px;
     margin: 20px auto;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -162,7 +174,7 @@ nav::after {
 }
 
 .accordion-content ul {
-    margin-left: 2%;
+    margin-left: 10%;
 }
 
 /* Show content when the checkbox is checked */
@@ -195,7 +207,7 @@ nav::after {
 #video_div video {
     display: block;
     margin: 3% auto 0;
-    width: 80%;
+    width: 90%;
     height: 40%;
     border: 1px solid #ccc;
 }
@@ -210,10 +222,62 @@ nav::after {
 }
 
 #why {
+    margin-top: 5%;
     color: white;
     background-color: #4caac9;
 }
 
 #why_div {
+    display: block;
+    justify-content: center;
+    margin: 0 20%;
+    padding-top: 5%;
+    font-size: 1.4rem;
+    padding-bottom: 5%;
+}
 
+footer {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+header {
+    background: linear-gradient(to right, #4caac9, #35869a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100vw;  /* Prend toute la largeur de l'écran */
+    max-width: 100%;
+    margin-bottom: 2%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre */
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

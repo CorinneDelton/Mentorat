@@ -11,3 +11,7 @@ document.querySelectorAll('.accordion input[type="checkbox"]').forEach(checkbox 
         }
     });
 });
+
+document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
+    this.currentTime = 0.4; // Définir le début à 1 seconde
+});
