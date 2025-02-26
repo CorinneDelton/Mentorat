@@ -1,5 +1,6 @@
 html {
     color: #737373;
+    width: 100%;
 }
 
 /* Réinitialisation de base */
@@ -237,9 +238,8 @@ nav::after {
 }
 
 footer {
+    margin-top: 3%;
     text-align: center;
-    margin-top: 2%;
-    margin-left: 5%;
 }
 
 header {
@@ -279,5 +279,18 @@ header {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    footer {
+        margin: 3% 10px 20px;
+        width: 100%;
+    }
+
+    footer iframe {
+        width: 50%;
     }
 }
