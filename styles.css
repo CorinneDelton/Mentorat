@@ -251,7 +251,7 @@ header {
     width: 100vw;  /* Prend toute la largeur de l'écran */
     max-width: 100%;
     margin-bottom: 2%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Titre */
@@ -293,4 +293,9 @@ header {
     footer iframe {
         width: 50%;
     }
+}
+
+.nowrap {
+    font-weight: normal;
+    white-space: nowrap;
 }
